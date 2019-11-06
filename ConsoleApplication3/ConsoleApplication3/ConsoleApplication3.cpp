@@ -1,26 +1,26 @@
 ﻿#include "pch.h"
-#include <iostream>
 #include <string>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-	int i, j;
-	string wyraz;
+	string tekst; 
+	int dl=tekst.length(); 
 
-	cout << "Podaj wyraz, ktory chcesz sprawdzic: ";
-	cin >> wyraz;
-	
-	for (i = 0, j = wyraz.length() - 1; i < j; i++, j--)
+	cout << "podaj tekst do zaszyfrowania" << endl;
+	cin >> tekst; 
+	cout << "podaj wspolczynnik przesuniecia" << endl;
+	cin >> dl; 
+
+	for(int i=0;i<=tekst.length();i++)
 	{
-		if (wyraz[i] != wyraz[j])
-			break;
+		if (tekst[i]>=)
+
+
 	}
-	if (i < j)
-		cout << "Podany wyraz nie jest palindromem" << endl;
-	else
-		cout << "Podany wyraz jest palindromem" << endl;
+	cout << tekst << endl;
 
 	return 0;
 }
